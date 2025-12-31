@@ -157,9 +157,9 @@ export const PROJECTS: Project[] = [
     title: "Zero-Shot Object Counting: Reproducing the VA-Count Framework",
     githubLink: "https://github.com/nitin0497/Zero-Shot-Object-Counting",
     visualIds: [
-      "https://raw.githubusercontent.com/nitin0497/Zero-Shot-Object-Counting/2bf7476f552f920ce0534592ae73b5e8b7fae2f9/zero_shot_framework_diagram.png",
-      "/images/zero_shot_counting_examples.png",
-      "/images/ZSOC exemplars.png"
+      "/images/zero_shot_framework_diagram.png",
+      "/images/zsco-exemplars.png",
+      "/images/zero_shot_counting_examples.png"
     ],
     description: "Implemented the VA-Count zero-shot object counting framework to enable class-agnostic object counting without human-labeled exemplars. Designed a scalable, data-efficient system requiring only object class names as input.",
     keyContributions: [
