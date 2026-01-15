@@ -28,9 +28,14 @@ export interface TeachingItem {
   description: string;
 }
 
+export interface Author {
+  name: string;
+  link?: string;
+}
+
 export interface WorkingPaper {
   title: string;
-  authors: string;
+  authors: Author[];
   description: string;
   status?: string;
   link?: string;
