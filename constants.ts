@@ -107,10 +107,9 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
     duration: "September 2022 – May 2025",
     points: [
       "Introduced the concept of Functional Form Misspecification (FFM) in testing nonlinear hypotheses, demonstrating how misspecified controls lead to biased and unreliable estimates in Operations Management literature.",
-      "Proposed Generalized Additive Models (GAMs) with first-differencing in panel data to mitigate FFM and address endogeneity.",
+      "Proposed Generalized Additive Models (GAMs) to mitigate FFM and first-differencing to address endogenity in panel data.",
       "Investigating the causal impact of Generative AI adoption on online knowledge communities across the Stack Exchange platform, revealing evidence of negative long-run effects on user engagement and network cohesion using network analytics and Difference-in-Differences designs.",
       "Conducted an extensive methodological review of matching techniques (CEM vs. PSM), focusing on their applicability and limitations when applied to interview and survey data in leadership and organizational research.",
-      "Developed and evaluated data imputation methods (Expectation-Maximization and industry-mean imputation) for EPS forecasting of S&P 500 firms using WRDS data."
     ]
   }
 ];
