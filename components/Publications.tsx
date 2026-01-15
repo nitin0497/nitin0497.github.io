@@ -18,7 +18,25 @@ const Publications: React.FC = () => {
                 </div>
                 <div>
                     <h3 className="font-bold text-slate-900 text-lg leading-snug mb-2">{paper.title}</h3>
-                    <p className="text-sm text-slate-500 mb-3 italic">{paper.authors}</p>
+                    <p className="text-sm text-slate-500 mb-3 italic">
+                      {paper.authors.map((author, i) => (
+                        <React.Fragment key={i}>
+                          {author.link ? (
+                            <a 
+                              href={author.link} 
+                              target="_blank" 
+                              rel="noopener noreferrer" 
+                              className="hover:text-blue-600 transition-colors"
+                            >
+                              {author.name}
+                            </a>
+                          ) : (
+                            <span>{author.name}</span>
+                          )}
+                          {i < paper.authors.length - 1 && '; '}
+                        </React.Fragment>
+                      ))}
+                    </p>
                     <p className="text-slate-700 leading-relaxed mb-3">
                         {paper.description}
                     </p>
@@ -29,7 +47,7 @@ const Publications: React.FC = () => {
                           </span>
                       )}
                       {paper.link && (
-                          <a href={paper.link} className="text-blue-600 hover:text-blue-800 hover:underline text-sm font-medium transition-colors">
+                          <a href={paper.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 hover:underline text-sm font-medium transition-colors">
                               Read on SSRN &rarr;
                           </a>
                       )}
