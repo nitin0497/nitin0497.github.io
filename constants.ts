@@ -10,7 +10,7 @@ export const CONTACT_INFO: ContactInfo = {
 export const USER_INFORMATION = [
   "I am a Data Scientist and Applied AI Researcher with a strong foundation in statistics, engineering, and analytics. My work spans machine learning, causal inference, deep learning, and computer vision, with a demonstrated ability to deliver end-to-end AI systems across both academic research and industry settings.",
   "I have specialized experience in causal inference under endogeneity, using structural path models and dynamic response frameworks to uncover and validate causal mechanisms in complex observational data. More recently, my work has focused on AI engineering and applied research in deep learning and computer vision, where I design scalable, data-efficient vision–language systems and build production-ready pipelines that integrate large language models with modern deep learning architectures and classical computer vision techniques.",
-  "My goal is to bridge rigorous research and real-world deployment—translating advances in machine learning, computer vision, and statistical modeling into reliable, interpretable, and high-impact AI systems that perform in production environments.",
+  "My goal is to bridge rigorous research and real-world deployment—translating latest research in machine learning, computer vision, and statistical modeling into reliable, interpretable, and high-impact AI systems that solve real-world problems."
 ];
 
 export const EDUCATION: EducationItem[] = [
@@ -130,26 +130,38 @@ export const TEACHING_EXPERIENCE: TeachingItem = {
 export const WORKING_PAPERS: WorkingPaper[] = [
   {
     title: "Effects of GenAI on Programming-Focused Online Knowledge Communities: A Network Science Approach",
-    authors: "Yadav, Nitin",
+    authors: [{ name: "Yadav, Nitin" }],
     description: "Examines the causal impact of ChatGPT on Stack Overflow and related communities using network analytics and Difference-in-Differences. Available at SSRN.",
     link: "https://ssrn.com/abstract=5170208"
   },
   {
     title: "A Comparative Analysis of Propensity Score and Coarsened Exact Matching Methods",
-    authors: "Jeong, Yeasung; Lee, Kang Bok; Han, Sumin; Paradice, David; Yadav, Nitin",
+    authors: [
+      { name: "Jeong, Yeasung", link: "https://scholar.google.com/citations?hl=en&user=TIPmw7kAAAAJ&view_op=list_works&sortby=pubdate" },
+      { name: "Lee, Kang Bok", link: "https://scholar.google.com/citations?user=kiOvQIcAAAAJ&hl=en" },
+      { name: "Han, Sumin", link: "https://www.researchgate.net/scientific-contributions/Sumin-Han-2145428986" },
+      { name: "Paradice, David", link: "https://scholar.google.com/citations?user=xvMSU60AAAAJ&hl=en" },
+      { name: "Yadav, Nitin" }
+    ],
     description: "Methodological comparison of PSM and CEM within operations research contexts.",
     status: "Manuscript submitted to Organizational Research Methods."
   },
   {
     title: "Nonlinear Hypothesis Testing in Operations Management: A Novel Methodology for Mitigating Misspecified Controls and Endogeneity",
-    authors: "Lee, Kang Bok; Jeong, Yeasung; Han, Sumin; Park, Junyoung; Yadav, Nitin",
+    authors: [
+      { name: "Lee, Kang Bok", link: "https://scholar.google.com/citations?user=kiOvQIcAAAAJ&hl=en" },
+      { name: "Jeong, Yeasung", link: "https://scholar.google.com/citations?hl=en&user=TIPmw7kAAAAJ&view_op=list_works&sortby=pubdate" },
+      { name: "Han, Sumin", link: "https://www.researchgate.net/scientific-contributions/Sumin-Han-2145428986" },
+      { name: "Park, Junyoung", link: "https://scholar.google.com/citations?hl=en&user=_XuJ0_gAAAAJ&view_op=list_works&sortby=pubdate" },
+      { name: "Yadav, Nitin" }
+    ],
     description: "Proposes a new framework to address functional form misspecification and endogeneity in nonlinear OM models.",
     status: "Manuscript submitted following acceptance of proposal at an elite operations research journal."
   }
 ];
 
 export const ACADEMIC_HONORS = [
-  "Harbert Eminent Scholar Fellowship (2024) — awarded by the Harbert College of Business in recognition of exceptional academic performance and research contributions."
+  "Harbert Eminent Scholar Fellowship (2024) — awarded by the Harbert College of Business in recognition of exceptional research contributions."
 ];
 
 export const PROJECTS: Project[] = [
@@ -161,7 +173,9 @@ export const PROJECTS: Project[] = [
       {
         title: "Exemplar Enhancement Module (EEM)",
         items: [
-          "Implemented automated exemplar mining using GroundingDINO for open-vocabulary proposals and a CLIP-based classifier to filter high-quality single-object patches."
+          "Implemented automated exemplar mining using GroundingDINO for open-vocabulary proposals and a CLIP-based classifier to filter high-quality single-object patches.",
+          "Integrated a specialized single-object binary filter (δ) leveraging frozen CLIP-ViT features to validate candidate exemplars, ensuring precise one-to-one class mapping.",
+          "Implemented automated patch deduplication and IoU-based filtering to mitigate the inclusion of suboptimal or redundant exemplars, enhancing the robustness of visual associative learning."
         ]
       },
       {
@@ -176,6 +190,35 @@ export const PROJECTS: Project[] = [
         title: "Impact",
         items: [
           "Highlighted expertise in data-efficient AI, open-vocabulary vision, and scalable perception systems, with applications in autonomous systems, environmental monitoring, and large-scale visual analytics."
+        ]
+      }
+    ]
+  },
+  {
+    title: "GPac: Evolutionary & Co-evolutionary Strategy for Autonomous Control",
+    description: "Developed a comprehensive Evolutionary Computing framework in Python to evolve autonomous controllers for a custom version of Pac-Man (GPac). The project utilized Genetic Programming (GP) to identify high-performance system models in complex, multi-modal search spaces.",
+    keyContributions: [
+      {
+        title: "Genetic Programming Architecture",
+        items: [
+          "Implemented a parse tree-based representation utilizing Ramped Half-and-Half initialization and sub-tree recombination (Crossover and Mutation) to navigate valid solution spaces.",
+          "Integrated advanced bloat control using Parsimony Pressure to maintain structural efficiency and model interpretability while optimizing fitness.",
+          "Developed specialized terminal and sensor primitives, including Manhattan distance sensors for real-time tracking of adversarial and target entities."
+        ]
+      },
+      {
+        title: "Selection & Selection Strategies",
+        items: [
+          "Architected robust selection mechanisms including k-Tournament selection (with and without replacement), Truncation, and Fitness Proportional Selection to manage selection pressure.",
+          "Optimized agent fitness through iterative generations, leveraging evolutionary exploration to solve high-dimensional control problems."
+        ]
+      },
+      {
+        title: "Competitive Co-evolution & Statistical Analysis",
+        items: [
+          "Engineered a co-evolutionary system where Pac-Man agents and Ghost controllers co-evolved in an adversarial environment, uncovering emergent strategic behaviors.",
+          "Conducted rigorous statistical analysis across 10-run experiments, reporting mean, standard deviation, and progression of best fitness scores using stair-step plots and histograms.",
+          "Utilized multi-objective optimization (game score vs. node count) to identify Pareto-optimal solutions for efficient controller design."
         ]
       }
     ]
