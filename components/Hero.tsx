@@ -25,6 +25,17 @@ const Hero: React.FC = () => {
         </div>
 
         <div className="flex flex-wrap justify-center md:justify-start gap-4">
+          <a
+            href={CONTACT_INFO.resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all shadow-md hover:shadow-lg font-bold"
+          >
+            <FileText size={20} />
+            <span>Download Resume</span>
+          </a>
+
+        <div className="flex flex-wrap justify-center md:justify-start gap-4">
           <span className="flex items-center gap-2 px-4 py-2 bg-slate-100 border border-slate-200 text-slate-900 rounded-lg font-medium">
              <Phone size={18} className="text-blue-600" />
              {CONTACT_INFO.phone}
