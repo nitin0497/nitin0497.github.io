@@ -4,13 +4,14 @@ export const CONTACT_INFO: ContactInfo = {
   email: "nitinyadav0497@gmail.com",
   phone: "+1 3348706720",
   linkedin: "https://www.linkedin.com/in/nitin-yadav-4867311a7/",
-  github: "https://github.com/nitin0497"
+  github: "https://github.com/nitin0497",
+  resumeUrl: "/Nitin_Yadav_Resume.pdf"
 };
 
 export const USER_INFORMATION = [
-  "I am a Data Scientist and Applied AI Researcher with a strong foundation in statistics, engineering, and analytics. My work spans machine learning, causal inference, deep learning, and computer vision, with a demonstrated ability to deliver end-to-end AI systems across both academic research and industry settings.",
-  "I have specialized experience in causal inference under endogeneity, using structural path models and dynamic response frameworks to uncover and validate causal mechanisms in complex observational data. More recently, my work has focused on AI engineering and applied research in deep learning and computer vision, where I design scalable, data-efficient vision–language systems and build production-ready pipelines that integrate large language models with modern deep learning architectures and classical computer vision techniques.",
-  "My goal is to bridge rigorous research and real-world deployment—translating latest research in machine learning, computer vision, and statistical modeling into reliable, interpretable, and high-impact AI systems that solve real-world problems."
+  "I am an Applied AI engineer and Data Scientist with a strong foundation in statistics, engineering, and analytics. My work spans machine learning, causal inference, deep learning, and computer vision, with a demonstrated ability to deliver end-to-end AI systems across both academic research and industry settings.",
+  "I have specialized experience in causal inference under endogeneity, using path models and response frameworks to uncover and validate causal mechanisms in observational data. More recently, my work has focused on AI engineering and applied research in deep learning and computer vision, where I design scalable, data-efficient vision–language systems and build production-ready pipelines that integrate large language models with modern deep learning architectures and classical computer vision techniques.",
+  "My goal is to bridge rigorous methods and real-world deployment—translating latest research in machine learning, computer vision, and statistical modelling into reliable and high-impact AI systems that solve real-world problems."
 ];
 
 export const EDUCATION: EducationItem[] = [
@@ -18,21 +19,21 @@ export const EDUCATION: EducationItem[] = [
     institution: "Auburn University",
     degree: "Master's degree in AI Engineering",
     duration: "June 2025 – May 2026 (expected)",
-    description: "Focusing on LLMs, Deep Learning, Computer Vision, and AI system design utilizing sophisticated evolutionary algorithms. I specifically concentrate on integrating LLMs with Computer Vision to construct Vision-Language Models, applied to zero-shot object counting.",
+    description: "Focusing on LLMs, Deep Learning, Computer Vision, and AI system design utilizing sophisticated evolutionary algorithms. I specifically concentrate on integrating LLMs with computer vision to construct Vision-Language Models, recently applied to zero-shot object counting.",
     location: "Auburn, AL"
   },
   {
     institution: "Auburn University",
     degree: "Graduate Certificate in Business Analytics",
     duration: "Aug 2024 - May 2025",
-    description: "Complements technical training with skills in data-driven decision-making, analytics strategy, and business-focused empirical modeling. This combination allows me to translate complex AI and statistical models into insights that are actionable in organizational and operational settings.",
+    description: "Complements technical training with skills in data-driven decision-making, analytics strategy, and business-focused empirical modelling. This combination allows me to translate complex AI and statistical models into insights that are actionable in organizational and operational settings.",
     location: "Auburn, AL"
   },
   {
     institution: "Auburn University",
     degree: "Master of Science in Probability and Statistics",
     duration: "Aug 2022 - Dec 2023",
-    description: "Coursework emphasized predictive modeling, computational statistics, multivariate analysis, and time-series econometrics. Developed strong foundations in statistical learning, causal inference, simulation methods, and empirical research design.",
+    description: "Coursework emphasized predictive modelling, computational statistics, multivariate analysis, and time-series econometrics. Developed strong foundations in statistical learning, causal inference, simulation methods, and empirical research design.",
     location: "Auburn, AL"
   },
   {
@@ -118,9 +119,9 @@ export const TEACHING_EXPERIENCE: TeachingItem = {
   role: "Graduate Teaching Assistant",
   institution: "Auburn University",
   courses: [
-    "BUAL 5600 / 6600 – Predictive Modeling (Dr. Kang Bok Lee): Fall 2024, Spring 2025",
+    "BUAL 5600 / 6600 – Predictive Modelling (Dr. Kang Bok Lee): Fall 2024, Spring 2025",
     "BUAL 2650 – Business Analytics II (Dr. Kang Bok Lee): Fall 2024",
-    "BUAL 5600 – Predictive Modeling (Dr. Sumin Han): Fall 2023, Spring 2025",
+    "BUAL 5600 – Predictive Modelling (Dr. Sumin Han): Fall 2023, Spring 2025",
     "FINC 3700 – Financial Markets and Institutions (Dr. James R. Barth): Fall 2022"
   ],
   description: "Responsibilities included leading lab sessions, supporting model implementation in R/Python, grading, and mentoring students on applied analytics projects."
@@ -277,9 +278,9 @@ export const PROJECTS: Project[] = [
     ]
   },
   {
-    title: "Modeling Financial Volatility with ARCH/GARCH",
+    title: "Modelling Financial Volatility with ARCH/GARCH",
     githubLink: "https://github.com/nitin0497/Volatility-Modeling",
-    description: "Modeled and forecasted time-varying volatility in financial markets using daily S&P 500 returns, addressing volatility clustering in financial time series through advanced econometric methods.",
+    description: "Modelled and forecasted time-varying volatility in financial markets using daily S&P 500 returns, addressing volatility clustering in financial time series through advanced econometric methods.",
     keyContributions: [
       {
         title: "Approach",
@@ -290,7 +291,7 @@ export const PROJECTS: Project[] = [
       {
         title: "Contributions",
         items: [
-          "Built a full ARCH-family modeling pipeline to estimate dynamic conditional variance.",
+          "Built a full ARCH-family modelling pipeline to estimate dynamic conditional variance.",
           "Analyzed volatility clustering and asymmetric responses to positive vs. negative shocks.",
           "Conducted Monte Carlo simulations to study volatility dynamics.",
           "Estimated Value at Risk (VaR) for downside risk assessment and portfolio applications.",
@@ -300,7 +301,7 @@ export const PROJECTS: Project[] = [
       {
         title: "Skills Demonstrated",
         items: [
-          "Demonstrates advanced proficiency in time-series econometrics and financial risk modeling."
+          "Demonstrates advanced proficiency in time-series econometrics and financial risk modelling."
         ]
       }
     ]
