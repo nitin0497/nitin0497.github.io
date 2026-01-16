@@ -53,4 +53,5 @@ export interface ContactInfo {
   phone: string;
   linkedin: string;
   github: string;
+  resumeUrl: string;
 }
