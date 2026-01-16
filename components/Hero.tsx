@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="flex-shrink-0 w-48 h-48 md:w-64 md:h-64 relative">
         <div className="absolute inset-0 bg-blue-100 rounded-2xl transform rotate-3"></div>
         <img
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80"
+          src="/images/nitin_profile.jpg"
           alt="Nitin Yadav"
           className="relative w-full h-full object-cover rounded-2xl shadow-lg border-4 border-white"
         />
