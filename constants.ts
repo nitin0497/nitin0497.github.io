@@ -5,7 +5,7 @@ export const CONTACT_INFO: ContactInfo = {
   phone: "+1 3348706720",
   linkedin: "https://www.linkedin.com/in/nitin-yadav-4867311a7/",
   github: "https://github.com/nitin0497",
-  resumeUrl: "/Nitin_Yadav_Resume.pdf"
+  resumeUrl: "images/Nitin_Yadav_Resume.pdf"
 };
 
 export const USER_INFORMATION = [
