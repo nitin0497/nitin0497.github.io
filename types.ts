@@ -44,6 +44,7 @@ export interface WorkingPaper {
 export interface Project {
   title: string;
   githubLink?: string;
+  ssrnLink?: string;
   description: string;
   keyContributions?: { title?: string; items: string[] }[];
 }
