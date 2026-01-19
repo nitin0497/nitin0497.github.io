@@ -5,21 +5,21 @@ export const CONTACT_INFO: ContactInfo = {
   phone: "+1 3348706720",
   linkedin: "https://www.linkedin.com/in/nitin-yadav-4867311a7/",
   github: "https://github.com/nitin0497",
-  resumeUrl: "/images/Nitin_Yadav_Resume.pdf"
+  resumeUrl: "/Nitin_Yadav_Resume.pdf"
 };
 
 export const USER_INFORMATION = [
-  "I am an Applied AI engineer and Data Scientist with a strong foundation in statistics, engineering, and analytics. My work spans machine learning, causal inference, deep learning, and computer vision, with a demonstrated ability to deliver end-to-end AI systems across both academic research and industry settings.",
-  "I have specialized experience in causal inference under endogeneity, using path models and response frameworks to uncover and validate causal mechanisms in observational data. More recently, my work has focused on AI engineering and applied research in deep learning and computer vision, where I design scalable, data-efficient vision–language systems and build production-ready pipelines that integrate large language models with modern deep learning architectures and classical computer vision techniques.",
-  "My goal is to bridge rigorous methods and real-world deployment—translating latest research in machine learning, computer vision, and statistical modelling into reliable and high-impact AI systems that solve real-world problems."
-];
+ "I am a Data Scientist and Applied AI Researcher with expertise at the intersection of statistics, machine learning, causal inference, deep learning, and computer vision. \
+ I specialize in causal inference under endogeneity and in building scalable, data-efficient vision–language systems that integrate large language models with modern deep learning and classical computer vision techniques.", \
+ "My work bridges rigorous research and real-world deployment, translating cutting-edge methods into reliable, interpretable, and high-impact intelligent systems."
+ ];
 
 export const EDUCATION: EducationItem[] = [
   {
     institution: "Auburn University",
     degree: "Master's degree in AI Engineering",
     duration: "June 2025 – May 2026 (expected)",
-    description: "Focusing on LLMs, Deep Learning, Computer Vision, and AI system design utilizing sophisticated evolutionary algorithms. I specifically concentrate on integrating LLMs with computer vision to construct Vision-Language Models, recently applied to zero-shot object counting.",
+    description: "Focusing on LLMs, Deep Learning, Computer Vision, and AI system design utilizing sophisticated evolutionary algorithms. I specifically concentrate on integrating LLMs with Computer Vision to construct Vision-Language Models, applied to zero-shot object counting.",
     location: "Auburn, AL"
   },
   {
@@ -108,9 +108,10 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
     duration: "September 2022 – May 2025",
     points: [
       "Introduced the concept of Functional Form Misspecification (FFM) in testing nonlinear hypotheses, demonstrating how misspecified controls lead to biased and unreliable estimates in Operations Management literature.",
-      "Proposed Generalized Additive Models (GAMs) to mitigate FFM and first-differencing to address endogenity in panel data.",
+      "Proposed Generalized Additive Models (GAMs) with first-differencing in panel data to mitigate FFM and address endogeneity.",
       "Investigating the causal impact of Generative AI adoption on online knowledge communities across the Stack Exchange platform, revealing evidence of negative long-run effects on user engagement and network cohesion using network analytics and Difference-in-Differences designs.",
       "Conducted an extensive methodological review of matching techniques (CEM vs. PSM), focusing on their applicability and limitations when applied to interview and survey data in leadership and organizational research.",
+      "Developed and evaluated data imputation methods (Expectation-Maximization and industry-mean imputation) for EPS forecasting of S&P 500 firms using WRDS data."
     ]
   }
 ];
@@ -128,12 +129,6 @@ export const TEACHING_EXPERIENCE: TeachingItem = {
 };
 
 export const WORKING_PAPERS: WorkingPaper[] = [
-  {
-    title: "Effects of GenAI on Programming-Focused Online Knowledge Communities: A Network Science Approach",
-    authors: [{ name: "Yadav, Nitin" }],
-    description: "Examines the causal impact of ChatGPT on Stack Overflow and related communities using network analytics and Difference-in-Differences. Available at SSRN.",
-    link: "https://ssrn.com/abstract=5170208"
-  },
   {
     title: "A Comparative Analysis of Propensity Score and Coarsened Exact Matching Methods",
     authors: [
@@ -155,7 +150,7 @@ export const WORKING_PAPERS: WorkingPaper[] = [
       { name: "Park, Junyoung", link: "https://scholar.google.com/citations?hl=en&user=_XuJ0_gAAAAJ&view_op=list_works&sortby=pubdate" },
       { name: "Yadav, Nitin" }
     ],
-    description: "Proposes a new framework to address functional form misspecification and endogeneity in nonlinear OM models.",
+    description: "Proposed a new framework to address functional form misspecification and endogeneity in nonlinear OM models.",
     status: "Manuscript submitted following acceptance of proposal at an elite operations research journal."
   }
 ];
@@ -166,9 +161,9 @@ export const ACADEMIC_HONORS = [
 
 export const PROJECTS: Project[] = [
   {
-    title: "Zero-Shot Object Counting: Reproducing the VA-Count Framework",
+    title: "Visual Association based Zero Shot Object Counting",
     githubLink: "https://github.com/nitin0497/Zero-Shot-Object-Counting",
-    description: "Implemented the VA-Count zero-shot object counting framework to enable class-agnostic object counting without human-labeled exemplars. Designed a scalable, data-efficient system requiring only object class names as input.",
+    description: "Implemented the VA-Count framework to enable class-agnostic object counting without human-labelled exemplars. The system leverages visual–semantic associations from object class names to generalize to unseen categories, resulting in a scalable, data-efficient, annotation-free counting pipeline.",
     keyContributions: [
       {
         title: "Exemplar Enhancement Module (EEM)",
@@ -185,17 +180,11 @@ export const PROJECTS: Project[] = [
           "Built a reproducible end-to-end pipeline in Python, including preprocessing, training, evaluation, and visualization.",
           "Evaluated performance on the FSC-147 benchmark dataset, demonstrating generalization to unseen object categories and complex scenes."
         ]
-      },
-      {
-        title: "Impact",
-        items: [
-          "Highlighted expertise in data-efficient AI, open-vocabulary vision, and scalable perception systems, with applications in autonomous systems, environmental monitoring, and large-scale visual analytics."
-        ]
       }
     ]
   },
   {
-    title: "GPac: Evolutionary & Co-evolutionary Strategy for Autonomous Control",
+    title: "GPac: Co-evolutionary Strategy for Autonomous Control using Genetic Programming",
     description: "Developed a comprehensive Evolutionary Computing framework in Python to evolve autonomous controllers for a custom version of Pac-Man (GPac). The project utilized Genetic Programming (GP) to identify high-performance system models in complex, multi-modal search spaces.",
     keyContributions: [
       {
@@ -216,7 +205,7 @@ export const PROJECTS: Project[] = [
       {
         title: "Competitive Co-evolution & Statistical Analysis",
         items: [
-          "Engineered a co-evolutionary system where Pac-Man agents and Ghost controllers co-evolved in an adversarial environment, uncovering emergent strategic behaviors.",
+          "Engineered a co-evolutionary system where Pac-Man agents and Ghost controllers co-evolved in an adversarial environment, uncovering emergent strategic behaviours.",
           "Conducted rigorous statistical analysis across 10-run experiments, reporting mean, standard deviation, and progression of best fitness scores using stair-step plots and histograms.",
           "Utilized multi-objective optimization (game score vs. node count) to identify Pareto-optimal solutions for efficient controller design."
         ]
@@ -240,24 +229,19 @@ export const PROJECTS: Project[] = [
         items: [
           "Built and trained a Convolutional Neural Network (CNN) on the MNIST dataset for digit classification, demonstrating preprocessing, segmentation, and generalization to custom inputs."
         ]
-      },
-      {
-        title: "Summary",
-        items: [
-          "Demonstrates a modular and interpretable approach to vision systems, illustrating effective integration of classical methods and deep learning for robust perception."
-        ]
       }
     ]
   },
   {
-    title: "Network Analysis of Stack Overflow: Impact of Generative AI on Online Knowledge Communities",
+    title: "Impact of Generative AI on Online Knowledge Sharing",
     githubLink: "https://github.com/nitin0497/Network-Analysis-of-StackOverflow",
+    ssrnLink: "https://ssrn.com/abstract=5170208",
     description: "Investigated how the rapid adoption of Generative AI tools (e.g., ChatGPT) has altered user engagement, collaboration, and knowledge exchange in programming-focused online communities, utilizing Stack Overflow as the primary case study.",
     keyContributions: [
       {
         title: "Methodology",
         items: [
-          "Constructed dynamic user interaction networks from Stack Exchange data, modeling users as nodes and Q&A interactions as weighted edges evolving over time. Employed network science and causal inference to analyze structural community changes post-ChatGPT introduction."
+          "Constructed dynamic user interaction networks from Stack Exchange data, modelling users as nodes and Q&A interactions as weighted edges evolving over time. Employed network science and causal inference to analyze structural community changes post-ChatGPT introduction."
         ]
       },
       {
@@ -267,12 +251,6 @@ export const PROJECTS: Project[] = [
           "Implemented a Difference-in-Differences (DiD) framework using a control community (e.g., Mathematics Stack Exchange) to isolate the causal impact of AI adoption.",
           "Computed and analyzed network metrics such as clustering coefficients, degree correlations, connectivity, and node survival rates across rolling windows.",
           "Identified a significant decline in peer-to-peer engagement and community cohesion, raising critical insights regarding the sustainability of collaborative knowledge platforms."
-        ]
-      },
-      {
-        title: "Summary",
-        items: [
-          "Synthesizes data science, network analysis, and empirical research to quantify the social consequences of AI-driven technological change."
         ]
       }
     ]
@@ -296,12 +274,6 @@ export const PROJECTS: Project[] = [
           "Conducted Monte Carlo simulations to study volatility dynamics.",
           "Estimated Value at Risk (VaR) for downside risk assessment and portfolio applications.",
           "Developed a fully reproducible R-based workflow, including visualization and documentation."
-        ]
-      },
-      {
-        title: "Skills Demonstrated",
-        items: [
-          "Demonstrates advanced proficiency in time-series econometrics and financial risk modelling."
         ]
       }
     ]
