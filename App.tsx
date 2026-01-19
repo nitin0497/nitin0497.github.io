@@ -1,19 +1,21 @@
 import React from 'react';
 import Hero from './components/Hero';
 import About from './components/About';
+import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Publications from './components/Publications';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
+import CollapsibleSection from './components/CollapsibleSection';
 
 function App() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-blue-200">
       <Navigation />
       
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 space-y-24">
+      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-12 space-y-12">
         <section id="hero">
           <Hero />
         </section>
@@ -22,21 +24,25 @@ function App() {
           <About />
         </section>
 
-        <section id="education" className="scroll-mt-24">
+        <CollapsibleSection id="skills" title="Technical Skills">
+          <Skills />
+        </CollapsibleSection>
+
+        <CollapsibleSection id="education" title="Education">
           <Education />
-        </section>
+        </CollapsibleSection>
 
-        <section id="experience" className="scroll-mt-24">
+        <CollapsibleSection id="experience" title="Professional Experience">
           <Experience />
-        </section>
+        </CollapsibleSection>
 
-        <section id="projects" className="scroll-mt-24">
+        <CollapsibleSection id="projects" title="Key Projects">
           <Projects />
-        </section>
+        </CollapsibleSection>
 
-        <section id="research" className="scroll-mt-24">
+        <CollapsibleSection id="research" title="Research & Honors">
           <Publications />
-        </section>
+        </CollapsibleSection>
       </main>
 
       <Footer />
