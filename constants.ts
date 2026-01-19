@@ -9,10 +9,9 @@ export const CONTACT_INFO: ContactInfo = {
 };
 
 export const USER_INFORMATION = [
- "I am a Data Scientist and Applied AI Researcher with expertise at the intersection of statistics, machine learning, causal inference, deep learning, and computer vision. \
- I specialize in causal inference under endogeneity and in building scalable, data-efficient vision–language systems that integrate large language models with modern deep learning and classical computer vision techniques.", \
- "My work bridges rigorous research and real-world deployment, translating cutting-edge methods into reliable, interpretable, and high-impact intelligent systems."
- ];
+  "I am a Data Scientist and Applied AI Researcher with expertise at the intersection of statistics, machine learning, causal inference, deep learning, and computer vision. I specialize in causal inference under endogeneity and in building scalable, data-efficient vision–language systems that integrate large language models with modern deep learning and classical computer vision techniques.",
+  "My work bridges rigorous research and real-world deployment, translating cutting-edge methods into reliable, interpretable, and high-impact intelligent systems."
+];
 
 export const EDUCATION: EducationItem[] = [
   {
