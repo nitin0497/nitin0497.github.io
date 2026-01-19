@@ -15,6 +15,7 @@ const Navigation: React.FC = () => {
 
   const navLinks = [
     { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
@@ -22,7 +23,7 @@ const Navigation: React.FC = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-2' : 'bg-transparent py-4'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-2' : 'bg-transparent py-4'}`}>
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-end items-center h-12">
           
@@ -31,7 +32,7 @@ const Navigation: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-slate-600 hover:text-blue-600 font-medium transition-colors text-sm uppercase tracking-wider"
+                className="text-slate-600 hover:text-blue-600 font-semibold transition-colors text-xs uppercase tracking-widest"
               >
                 {link.name}
               </a>
@@ -51,13 +52,13 @@ const Navigation: React.FC = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-lg">
+        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-xl">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-blue-600 hover:bg-slate-50"
+                className="block px-3 py-4 text-base font-bold text-slate-700 hover:text-blue-600 border-b border-slate-50 last:border-0"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
