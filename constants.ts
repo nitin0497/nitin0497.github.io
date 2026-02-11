@@ -1,4 +1,12 @@
-import { EducationItem, ExperienceItem, ResearchItem, TeachingItem, WorkingPaper, Project, ContactInfo } from './types';
+import {
+  EducationItem,
+  ExperienceItem,
+  ResearchItem,
+  TeachingItem,
+  WorkingPaper,
+  Project,
+  ContactInfo
+} from "./types";
 
 export const CONTACT_INFO: ContactInfo = {
   email: "nitinyadav0497@gmail.com",
@@ -18,28 +26,32 @@ export const EDUCATION: EducationItem[] = [
     institution: "Auburn University",
     degree: "Master's degree in AI Engineering",
     duration: "June 2025 – May 2026 (expected)",
-    description: "Focusing on LLMs, Deep Learning, Computer Vision, and AI system design utilizing sophisticated evolutionary algorithms. I specifically concentrate on integrating LLMs with Computer Vision to construct Vision-Language Models, applied to zero-shot object counting.",
+    description:
+      "Focusing on LLMs, Deep Learning, Computer Vision, and AI system design utilizing sophisticated evolutionary algorithms. I specifically concentrate on integrating LLMs with Computer Vision to construct Vision-Language Models, applied to zero-shot object counting.",
     location: "Auburn, AL"
   },
   {
     institution: "Auburn University",
     degree: "Graduate Certificate in Business Analytics",
     duration: "Aug 2024 - May 2025",
-    description: "Complements technical training with skills in data-driven decision-making, analytics strategy, and business-focused empirical modelling. This combination allows me to translate complex AI and statistical models into insights that are actionable in organizational and operational settings.",
+    description:
+      "Complements technical training with skills in data-driven decision-making, analytics strategy, and business-focused empirical modelling. This combination allows me to translate complex AI and statistical models into insights that are actionable in organizational and operational settings.",
     location: "Auburn, AL"
   },
   {
     institution: "Auburn University",
     degree: "Master of Science in Probability and Statistics",
     duration: "Aug 2022 - Dec 2023",
-    description: "Coursework emphasized predictive modelling, computational statistics, multivariate analysis, and time-series econometrics. Developed strong foundations in statistical learning, causal inference, simulation methods, and empirical research design.",
+    description:
+      "Coursework emphasized predictive modelling, computational statistics, multivariate analysis, and time-series econometrics. Developed strong foundations in statistical learning, causal inference, simulation methods, and empirical research design.",
     location: "Auburn, AL"
   },
   {
     institution: "BITS Pilani, Hyderabad Campus",
     degree: "Bachelor of Engineering in Chemical Engineering",
     duration: "Aug 2016 - May 2020",
-    description: "Completed with a minor in Finance. Provided a strong quantitative foundation in calculus, linear algebra, probability, numerical methods, and financial analysis, shaping my ability to approach complex systems analytically and across disciplines.",
+    description:
+      "Completed with a minor in Finance. Provided a strong quantitative foundation in calculus, linear algebra, probability, numerical methods, and financial analysis, shaping my ability to approach complex systems analytically and across disciplines.",
     location: "Hyderabad, India"
   }
 ];
@@ -88,7 +100,7 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
     points: [
       "Assisted in introducing the concept of Functional Form Misspecification (FFM) in testing nonlinear hypotheses, demonstrating how misspecified controls lead to biased and unreliable estimates in Operations Management literature.",
       "Proposed Generalized Additive Models (GAMs) with first-differencing in panel data to mitigate FFM and address endogeneity.",
-      "Investigating the causal impact of Generative AI adoption on online knowledge communities across the Stack Exchange platform, revealing evidence of negative long-run effects on user engagement and network cohesion using network analytics and Difference-in-Differences designs.",
+      "Investigating the causal impact of Generative AI adoption on online knowledge communities across the Stack Exchange platform, revealing evidence of negative long-run effects on user engagement and network cohesion using network analytics and Difference-in-Differences designs."
     ]
   },
   {
@@ -98,10 +110,12 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
     duration: "August 2022 – December 2023",
     points: [
       "Provided one-on-one consulting to graduate students and faculty on statistical analysis and data science workflows.",
-      "Specialized in debugging and optimizing R and Python scripts for research projects across multiple disciplines."
+      "Specialized in debugging and optimizing R and Python scripts for research projects across multiple disciplines.",
       "Automated extraction of course data from the Canvas LMS using web scraping tools to support workload estimation across university courses.",
       "Developed an interactive R Shiny application for estimating course workload, designed for future integration into Auburn’s instructional planning systems."
-    ];
+    ]
+  }
+];
 
 export const TEACHING_EXPERIENCE: TeachingItem = {
   role: "Graduate Teaching Assistant",
@@ -112,14 +126,18 @@ export const TEACHING_EXPERIENCE: TeachingItem = {
     "BUAL 5600 – Predictive Modelling (Dr. Sumin Han): Fall 2023, Spring 2025",
     "FINC 3700 – Financial Markets and Institutions (Dr. James R. Barth): Fall 2022"
   ],
-  description: "Responsibilities included leading lab sessions, supporting model implementation in R/Python, grading, and mentoring students on applied analytics projects."
+  description:
+    "Responsibilities included leading lab sessions, supporting model implementation in R/Python, grading, and mentoring students on applied analytics projects."
 };
 
 export const WORKING_PAPERS: WorkingPaper[] = [
   {
     title: "A Comparative Analysis of Propensity Score and Coarsened Exact Matching Methods",
     authors: [
-      { name: "Jeong, Yeasung", link: "https://scholar.google.com/citations?hl=en&user=TIPmw7kAAAAJ&view_op=list_works&sortby=pubdate" },
+      {
+        name: "Jeong, Yeasung",
+        link: "https://scholar.google.com/citations?hl=en&user=TIPmw7kAAAAJ&view_op=list_works&sortby=pubdate"
+      },
       { name: "Lee, Kang Bok", link: "https://scholar.google.com/citations?user=kiOvQIcAAAAJ&hl=en" },
       { name: "Han, Sumin", link: "https://www.researchgate.net/scientific-contributions/Sumin-Han-2145428986" },
       { name: "Paradice, David", link: "https://scholar.google.com/citations?user=xvMSU60AAAAJ&hl=en" },
@@ -132,9 +150,15 @@ export const WORKING_PAPERS: WorkingPaper[] = [
     title: "Nonlinear Hypothesis Testing in Operations Management: A Novel Methodology for Mitigating Misspecified Controls and Endogeneity",
     authors: [
       { name: "Lee, Kang Bok", link: "https://scholar.google.com/citations?user=kiOvQIcAAAAJ&hl=en" },
-      { name: "Jeong, Yeasung", link: "https://scholar.google.com/citations?hl=en&user=TIPmw7kAAAAJ&view_op=list_works&sortby=pubdate" },
+      {
+        name: "Jeong, Yeasung",
+        link: "https://scholar.google.com/citations?hl=en&user=TIPmw7kAAAAJ&view_op=list_works&sortby=pubdate"
+      },
       { name: "Han, Sumin", link: "https://www.researchgate.net/scientific-contributions/Sumin-Han-2145428986" },
-      { name: "Park, Junyoung", link: "https://scholar.google.com/citations?hl=en&user=_XuJ0_gAAAAJ&view_op=list_works&sortby=pubdate" },
+      {
+        name: "Park, Junyoung",
+        link: "https://scholar.google.com/citations?hl=en&user=_XuJ0_gAAAAJ&view_op=list_works&sortby=pubdate"
+      },
       { name: "Yadav, Nitin" }
     ],
     description: "Proposed a new framework to address functional form misspecification and endogeneity in nonlinear OM models.",
@@ -150,7 +174,8 @@ export const PROJECTS: Project[] = [
   {
     title: "Visual Association based Zero Shot Object Counting",
     githubLink: "https://github.com/nitin0497/Zero-Shot-Object-Counting",
-    description: "Implemented the VA-Count framework to enable class-agnostic object counting without human-labelled exemplars. The system leverages visual–semantic associations from object class names to generalize to unseen categories, resulting in a scalable, data-efficient, annotation-free counting pipeline.",
+    description:
+      "Implemented the VA-Count framework to enable class-agnostic object counting without human-labelled exemplars. The system leverages visual–semantic associations from object class names to generalize to unseen categories, resulting in a scalable, data-efficient, annotation-free counting pipeline.",
     keyContributions: [
       {
         title: "Exemplar Enhancement Module (EEM)",
@@ -172,7 +197,8 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "GPac: Co-evolutionary Strategy for Autonomous Control using Genetic Programming",
-    description: "Developed a comprehensive Evolutionary Computing framework in Python to evolve autonomous controllers for a custom version of Pac-Man (GPac). The project utilized Genetic Programming (GP) to identify high-performance system models in complex, multi-modal search spaces.",
+    description:
+      "Developed a comprehensive Evolutionary Computing framework in Python to evolve autonomous controllers for a custom version of Pac-Man (GPac). The project utilized Genetic Programming (GP) to identify high-performance system models in complex, multi-modal search spaces.",
     keyContributions: [
       {
         title: "Genetic Programming Architecture",
@@ -202,7 +228,8 @@ export const PROJECTS: Project[] = [
   {
     title: "Object Recognition and Tracking: Classical & Deep Learning Computer Vision Pipelines",
     githubLink: "https://github.com/nitin0497/Object-Recognition-and-Tracking",
-    description: "Architected an end-to-end computer vision system integrating classical image processing with deep learning models to address real-world object recognition and tracking challenges.",
+    description:
+      "Architected an end-to-end computer vision system integrating classical image processing with deep learning models to address real-world object recognition and tracking challenges.",
     keyContributions: [
       {
         title: "Real-Time Object Tracking",
@@ -213,9 +240,7 @@ export const PROJECTS: Project[] = [
       },
       {
         title: "Handwritten Digit Recognition",
-        items: [
-          "Built and trained a Convolutional Neural Network (CNN) on the MNIST dataset for digit classification, demonstrating preprocessing, segmentation, and generalization to custom inputs."
-        ]
+        items: ["Built and trained a Convolutional Neural Network (CNN) on the MNIST dataset for digit classification, demonstrating preprocessing, segmentation, and generalization to custom inputs."]
       }
     ]
   },
@@ -223,7 +248,8 @@ export const PROJECTS: Project[] = [
     title: "Impact of Generative AI on Online Knowledge Sharing",
     githubLink: "https://github.com/nitin0497/Network-Analysis-of-StackOverflow",
     ssrnLink: "https://ssrn.com/abstract=5170208",
-    description: "Investigated how the rapid adoption of Generative AI tools (e.g., ChatGPT) has altered user engagement, collaboration, and knowledge exchange in programming-focused online communities, utilizing Stack Overflow as the primary case study.",
+    description:
+      "Investigated how the rapid adoption of Generative AI tools (e.g., ChatGPT) has altered user engagement, collaboration, and knowledge exchange in programming-focused online communities, utilizing Stack Overflow as the primary case study.",
     keyContributions: [
       {
         title: "Methodology",
@@ -245,7 +271,8 @@ export const PROJECTS: Project[] = [
   {
     title: "Modelling Financial Volatility with ARCH/GARCH",
     githubLink: "https://github.com/nitin0497/Volatility-Modeling",
-    description: "Modelled and forecasted time-varying volatility in financial markets using daily S&P 500 returns, addressing volatility clustering in financial time series through advanced econometric methods.",
+    description:
+      "Modelled and forecasted time-varying volatility in financial markets using daily S&P 500 returns, addressing volatility clustering in financial time series through advanced econometric methods.",
     keyContributions: [
       {
         title: "Methodology",
