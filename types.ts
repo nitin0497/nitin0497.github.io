@@ -16,7 +16,8 @@ export interface ExperienceItem {
 
 export interface ResearchItem {
   title: string;
-  institution: string;
+  company: string;
+  location: string;
   duration: string;
   points: string[];
 }
