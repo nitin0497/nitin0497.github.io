@@ -95,7 +95,8 @@ export const PROFESSIONAL_EXPERIENCE: ExperienceItem[] = [
 export const RESEARCH_EXPERIENCE: ResearchItem[] = [
   {
     title: "Research Assistant",
-    institution: "Auburn University",
+    company: "Auburn University",
+    location: "Auburn, AL",
     duration: "September 2022 – May 2025",
     points: [
       "Assisted in introducing the concept of Functional Form Misspecification (FFM) in testing nonlinear hypotheses, demonstrating how misspecified controls lead to biased and unreliable estimates in Operations Management literature.",
@@ -105,7 +106,7 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
   },
   {
     title: "Data Consultant",
-    institution: "Innovation and Research Commons, Auburn University",
+    company: "Innovation and Research Commons, Auburn University",
     location: "Auburn, AL",
     duration: "August 2022 – December 2023",
     points: [
@@ -119,7 +120,7 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
 
 export const TEACHING_EXPERIENCE: TeachingItem = {
   role: "Graduate Teaching Assistant",
-  institution: "Auburn University",
+  company: "Auburn University",
   courses: [
     "BUAL 5600 / 6600 – Predictive Modelling (Dr. Kang Bok Lee): Fall 2024, Spring 2025",
     "BUAL 2650 – Business Analytics II (Dr. Kang Bok Lee): Fall 2024",
