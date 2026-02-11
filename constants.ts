@@ -9,8 +9,8 @@ export const CONTACT_INFO: ContactInfo = {
 };
 
 export const USER_INFORMATION = [
-  "I am a Data Scientist and Applied AI Researcher with expertise at the intersection of statistics, machine learning, causal inference, deep learning, and computer vision. I specialize in causal inference under endogeneity and in building scalable, data-efficient vision–language systems that integrate large language models with modern deep learning and classical computer vision techniques.",
-  "My work bridges rigorous research and real-world deployment, translating cutting-edge methods into reliable, interpretable, and high-impact intelligent systems."
+  "I am a Data Scientist and Applied AI Researcher with expertise at the intersection of statistics, machine learning, causal inference, deep learning, and computer vision. With double Master's in Statistics and AI engineering, I specialize in statistical modelling, causal inference under endogeneity and building scalable, data-efficient vision–language systems that integrate large language models with modern deep learning and computer vision techniques.",
+  "My work and vision bridge rigorous research and real-world deployment, translating cutting-edge methods into reliable, interpretable, and high-impact intelligent systems."
 ];
 
 export const EDUCATION: EducationItem[] = [
@@ -57,26 +57,6 @@ export const PROFESSIONAL_EXPERIENCE: ExperienceItem[] = [
     ]
   },
   {
-    title: "Graduate Assistant – Project Management",
-    company: "Biggio Center for the Enhancement of Teaching & Learning, Auburn University",
-    location: "Auburn, AL",
-    duration: "October 2022 – July 2023",
-    points: [
-      "Automated extraction of course data from the Canvas LMS using web scraping tools to support workload estimation across university courses.",
-      "Developed an interactive R Shiny application for estimating course workload, designed for future integration into Auburn’s instructional planning systems."
-    ]
-  },
-  {
-    title: "Data Consultant",
-    company: "RBD Library (IRC), Auburn University",
-    location: "Auburn, AL",
-    duration: "August 2022 – December 2023",
-    points: [
-      "Provided one-on-one consulting to graduate students and faculty on statistical analysis and data science workflows.",
-      "Specialized in debugging and optimizing R and Python scripts for research projects across multiple disciplines."
-    ]
-  },
-  {
     title: "Data Analyst & Project Manager",
     company: "Fractal Analytics",
     location: "Mumbai, India",
@@ -113,7 +93,18 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
       "Developed and evaluated data imputation methods (Expectation-Maximization and industry-mean imputation) for EPS forecasting of S&P 500 firms using WRDS data."
     ]
   }
-];
+]
+  {
+    title: "Data Consultant",
+    company: "nnovation and Research Commons, Auburn University",
+    location: "Auburn, AL",
+    duration: "August 2022 – December 2023",
+    points: [
+      "Provided one-on-one consulting to graduate students and faculty on statistical analysis and data science workflows.",
+      "Specialized in debugging and optimizing R and Python scripts for research projects across multiple disciplines."
+      "Automated extraction of course data from the Canvas LMS using web scraping tools to support workload estimation across university courses.",
+      "Developed an interactive R Shiny application for estimating course workload, designed for future integration into Auburn’s instructional planning systems."
+    ];
 
 export const TEACHING_EXPERIENCE: TeachingItem = {
   role: "Graduate Teaching Assistant",
@@ -195,7 +186,7 @@ export const PROJECTS: Project[] = [
         ]
       },
       {
-        title: "Selection & Selection Strategies",
+        title: "Selection Strategies",
         items: [
           "Architected robust selection mechanisms including k-Tournament selection (with and without replacement), Truncation, and Fitness Proportional Selection to manage selection pressure.",
           "Optimized agent fitness through iterative generations, leveraging evolutionary exploration to solve high-dimensional control problems."
@@ -262,7 +253,7 @@ export const PROJECTS: Project[] = [
       {
         title: "Approach",
         items: [
-          "Implemented and compared ARCH, GARCH, and GJR-GARCH models to capture conditional heteroskedasticity and leverage effects, utilizing resulting forecasts for comprehensive risk measurement."
+          "Implemented and compared ARCH, GARCH, and GJR-GARCH models to capture conditional heteroskedasticity and leverage effects, utilizing resulting VaR(Value-at-Risk) forecasts for comprehensive risk measurement."
         ]
       },
       {
