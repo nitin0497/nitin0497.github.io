@@ -46,21 +46,40 @@ const Experience: React.FC = () => {
           <BookOpen size={16} />
           Academic Research
         </h4>
-        <div className="space-y-8">
+
+        <div className="space-y-10">
           {RESEARCH_EXPERIENCE.map((res, index) => (
-            <div key={index} className="bg-slate-50/50 p-6 rounded-2xl border border-slate-100">
-              <div className="flex justify-between items-start mb-4">
+            <div key={index} className="group">
+              <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900">{res.title}</h3>
-                  <p className="text-slate-500 font-medium">{res.institution}</p>
+                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">
+                    {res.title}
+                  </h3>
+
+                  {/* Match "company" styling */}
+                  <p className="text-blue-600 font-bold">
+                    {/* If your ResearchItem sometimes uses company instead of institution */}
+                    {"institution" in res ? res.institution : (res as any).company}
+                  </p>
                 </div>
-                <span className="text-xs font-bold bg-white px-3 py-1 rounded-full border border-slate-200 shadow-sm">
-                  {res.duration}
-                </span>
+
+                <div className="text-right mt-2 md:mt-0">
+                  <span className="text-sm font-bold text-slate-500 block">{res.duration}</span>
+
+                  {/* Optional: show location only if present */}
+                  {"location" in res && res.location ? (
+                    <span className="text-xs text-slate-400 flex items-center justify-end gap-1">
+                      <MapPin size={12} /> {(res as any).location}
+                    </span>
+                  ) : null}
+                </div>
               </div>
-              <ul className="list-disc list-outside ml-5 space-y-3 text-slate-700 marker:text-blue-500">
+
+              <ul className="list-disc list-outside ml-5 space-y-2 text-slate-700 marker:text-blue-400">
                 {res.points.map((point, idx) => (
-                  <li key={idx} className="leading-relaxed pl-1">{point}</li>
+                  <li key={idx} className="leading-relaxed pl-1">
+                    {point}
+                  </li>
                 ))}
               </ul>
             </div>
