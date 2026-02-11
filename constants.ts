@@ -86,7 +86,7 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
     institution: "Auburn University",
     duration: "September 2022 – May 2025",
     points: [
-      "Introduced the concept of Functional Form Misspecification (FFM) in testing nonlinear hypotheses, demonstrating how misspecified controls lead to biased and unreliable estimates in Operations Management literature.",
+      "Assisted in introducing the concept of Functional Form Misspecification (FFM) in testing nonlinear hypotheses, demonstrating how misspecified controls lead to biased and unreliable estimates in Operations Management literature.",
       "Proposed Generalized Additive Models (GAMs) with first-differencing in panel data to mitigate FFM and address endogeneity.",
       "Investigating the causal impact of Generative AI adoption on online knowledge communities across the Stack Exchange platform, revealing evidence of negative long-run effects on user engagement and network cohesion using network analytics and Difference-in-Differences designs.",
       "Conducted an extensive methodological review of matching techniques (CEM vs. PSM), focusing on their applicability and limitations when applied to interview and survey data in leadership and organizational research.",
