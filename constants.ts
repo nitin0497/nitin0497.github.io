@@ -105,7 +105,7 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
   },
   {
     title: "Data Consultant",
-    company: "Innovation and Research Commons, Auburn University",
+    institution: "Innovation and Research Commons, Auburn University",
     location: "Auburn, AL",
     duration: "August 2022 – December 2023",
     points: [
