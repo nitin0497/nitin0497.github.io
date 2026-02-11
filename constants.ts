@@ -157,7 +157,7 @@ export const PROJECTS: Project[] = [
         title: "Exemplar Enhancement Module (EEM)",
         items: [
           "Implemented automated exemplar mining using GroundingDINO for open-vocabulary proposals and a CLIP-based classifier to filter high-quality single-object patches.",
-          "Integrated a specialized single-object binary filter (δ) leveraging frozen CLIP-ViT features to validate candidate exemplars, ensuring precise one-to-one class mapping.",
+          "Integrated a specialized single-object binary filter, leveraging frozen CLIP-ViT features to validate candidate exemplars, ensuring precise one-to-one class mapping.",
           "Implemented automated patch deduplication and IoU-based filtering to mitigate the inclusion of suboptimal or redundant exemplars, enhancing the robustness of visual associative learning."
         ]
       },
@@ -249,7 +249,7 @@ export const PROJECTS: Project[] = [
     description: "Modelled and forecasted time-varying volatility in financial markets using daily S&P 500 returns, addressing volatility clustering in financial time series through advanced econometric methods.",
     keyContributions: [
       {
-        title: "Approach",
+        title: "Methodology",
         items: [
           "Implemented and compared ARCH, GARCH, and GJR-GARCH models to capture conditional heteroskedasticity and leverage effects, utilizing resulting VaR(Value-at-Risk) forecasts for comprehensive risk measurement."
         ]
