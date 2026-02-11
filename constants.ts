@@ -17,7 +17,7 @@ export const CONTACT_INFO: ContactInfo = {
 };
 
 export const USER_INFORMATION = [
-  "I am a Data Scientist and Applied AI Engineer with expertise at the intersection of statistics, machine learning, causal inference, deep learning, and computer vision."
+  "I am a Data Scientist and Applied AI Engineer with expertise at the intersection of statistics, machine learning, causal inference, deep learning, and computer vision.",
   "With dual master's in Statistics and AI engineering, I specialize in statistical modelling, causal inference under endogeneity and building scalable, data-efficient vision–language systems that integrate large language models with modern deep learning and computer vision techniques.",
   "My work and vision bridge rigorous research and real-world deployment, translating cutting-edge methods into reliable, interpretable, and high-impact intelligent systems."
 ];
