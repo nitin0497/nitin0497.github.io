@@ -90,11 +90,10 @@ export const RESEARCH_EXPERIENCE: ResearchItem[] = [
       "Proposed Generalized Additive Models (GAMs) with first-differencing in panel data to mitigate FFM and address endogeneity.",
       "Investigating the causal impact of Generative AI adoption on online knowledge communities across the Stack Exchange platform, revealing evidence of negative long-run effects on user engagement and network cohesion using network analytics and Difference-in-Differences designs.",
     ]
-  }
-]
+  },
   {
     title: "Data Consultant",
-    company: "nnovation and Research Commons, Auburn University",
+    company: "Innovation and Research Commons, Auburn University",
     location: "Auburn, AL",
     duration: "August 2022 – December 2023",
     points: [
